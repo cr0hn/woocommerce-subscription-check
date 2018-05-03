@@ -1,0 +1,19 @@
+version: "2"
+services:
+  redis:
+    image: redis:alpine
+
+  woocommerce-subscription-check:
+    image: woocommerce-subscription-check
+    depends_on:
+      - redis
+    env_file:
+      - .env
+    environment:
+      - LISTEN_ADDR=0.0.0.0
+      - REDIS_HOST=redis
+      - WSC_LOG_LEVEL=1
+      - WSC_API_PREFIX="v1"
+      - WSC_LISTEN_PORT=9000
+    ports:
+      - "9000:9000"

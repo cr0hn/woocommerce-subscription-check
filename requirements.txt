@@ -1,0 +1,5 @@
+sanic
+aiohttp
+sanic-sentry
+asyncio_redis
+sanic_session
