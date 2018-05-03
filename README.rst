@@ -69,12 +69,26 @@ Environment vars
 - ADMIN_ROLE_PASSWORD: **Mandatory**
 
 
-Docker Image
+Using Docker
 ============
 
 .. code-block:: bash
 
     > docker run -p 9000:9000 --rm cr0hn/woocommerce-subscription-check
+
+Using Pypi
+==========
+
+.. code-block:: bash
+
+    > python3.6 -m pip install woocommerce_subscriptions_check
+
+Installing with Sentry support:
+
+
+.. code-block:: bash
+
+    > python3.6 -m pip install woocommerce_subscriptions_check[sentry]
 
 
 End-points

@@ -18,11 +18,14 @@ with open(join(abspath(dirname(__file__)), "VERSION"), "r") as v:
 RELEASE = os.getenv("CIRCLE_BUILD_NUM")
 
 setup(
-    name='woocommerce-subscriptions-check',
+    name='woocommerce_subscriptions_check',
     version=f"{VERSION}.{RELEASE}",
     packages=find_packages(),
     long_description=readme,
     install_requires=required,
+    extras_require={
+        'sentry': ["sanic-sentry"]
+    },
     include_package_data=True,
     url='https://github.com/cr0hn/woocommerce-subscriptions-check',
     author='Daniel Garcia (cr0hn)',
