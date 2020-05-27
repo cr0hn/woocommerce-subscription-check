@@ -11,6 +11,10 @@ WooCommerce Subscription Checker
 |Python versions | 3.6 or above                                                    |
 +----------------+-----------------------------------------------------------------+
 
+Support this project
+====================
+
+Support this project (to solve issues, new features...) by applying the Github "Sponsor" button.
 
 Motivations
 ===========
